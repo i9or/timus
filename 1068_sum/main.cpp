@@ -1,12 +1,9 @@
 #include <iostream>
-#include <vector>
-#include <cmath>
-#include <iomanip>
 
 int main() {
   #ifndef ONLINE_JUDGE
-   freopen("in.txt", "rt", stdin);
-   freopen("out.txt", "wt", stdout);
+   freopen("../1068_sum/in.txt", "rt", stdin);
+   freopen("../1068_sum/out.txt", "wt", stdout);
   #endif
 
   int inputNumber;

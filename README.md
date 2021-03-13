@@ -2,4 +2,4 @@
 
 ## TODO
 
-- [ ] Automate compilation
+- [x] Automate compilation

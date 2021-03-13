@@ -4,26 +4,26 @@
 #include <iomanip>
 
 int main() {
-  #ifndef ONLINE_JUDGE
-   freopen("in.txt", "rt", stdin);
-   freopen("out.txt", "wt", stdout);
-  #endif
+#ifndef ONLINE_JUDGE
+    freopen("../1001_reverse_root/in.txt", "rt", stdin);
+    freopen("../1001_reverse_root/out.txt", "wt", stdout);
+#endif
 
-  std::vector<double> numbers;
-  unsigned long long inputNumber;
+    std::vector<double> numbers;
+    unsigned long long inputNumber;
 
-  while (std::cin >> inputNumber) {
-    numbers.push_back(sqrt(inputNumber));
-  }
+    while (std::cin >> inputNumber) {
+        numbers.push_back(sqrt(static_cast<double>(inputNumber)));
+    }
 
-  std::cout << std::fixed;
-  std::cout << std::setprecision(4);
+    std::cout << std::fixed;
+    std::cout << std::setprecision(4);
 
-  for (int i = numbers.size()-1; i >= 0; --i) {
-    std::cout
-      << numbers[i]
-      << std::endl;
-  }
+    for (int i = static_cast<int>(numbers.size()) - 1; i >= 0; --i) {
+        std::cout
+                << numbers[i]
+                << std::endl;
+    }
 
-  return 0;
+    return 0;
 }
